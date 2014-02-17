@@ -27,7 +27,7 @@ with open(Paths.text_index) as f:
 
 
 print "Enter a query document:"
-s = raw_input()
+s = raw_input('> ')
 
 while s and s != 'exit':
 
@@ -67,8 +67,8 @@ while s and s != 'exit':
 	print "%s - %.3f" % (fileid, score)
 	print contents, "\n"
 
-	print "The most significant topic included these words:"
+	print "The most significant topic included these stems:"
 	print ', '.join(top_topic_words), "\n"
 
 	print "-" * 80
-	s = raw_input()
+	s = raw_input('>')
